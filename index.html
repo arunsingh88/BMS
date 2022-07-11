@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1 , height=device-height" >
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("backupBG.png");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+ 
+
+</style>
+
+<meta charset="UTF-8">
+  <title>BMS</title>
+  <meta name="viewport"
+        content="width=device-width, height=device-height, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <meta charset="utf-8" />
+<script src="https://chat.pepsico-staging.onereach.ai/lib/richWebChat.umd.min.js"></script>
+<link rel="stylesheet" href="https://chat.pepsico-staging.onereach.ai/lib/richWebChat.css"/>
+
+</head>
+<body>
+
+<img src="backupBG.png" alt="alttext" height="100%" width="100%">
+
+
+
+<div id="rwc"></div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    var RWC = richWebChat.default
+    var app = new RWC({
+      width:'100px',
+      height:'100px',
+      container: '#rwc', // DOM element selector where chat will be inserted
+      chatUrl: 'https://chat.pepsico-staging.onereach.ai/dvjIKSznTs2RcTFMs6imyA/09vzk1u?loader=light', // url of your chat. required
+      autoExpandDelay: 15000,
+      position: 'bottom-right',
+      inviteMessage: "Ask AnalytX",
+      inviteButton: "",
+      inviteImage: undefined,
+      showCloseIcon: false,
+      inviteTimeout: 0,
+      allowChangeChatWindowSize: true,
+      allowDrag: true,
+      widgetColor: '#BA68C8',
+      allowStartNewConversation: false,
+      thumbLogo: 'https://files.pepsico-staging.api.onereach.ai/public/76f8c829-2ce7-4ecd-9171-314cb3a8a6c8/bmsDemoLogo.png',
+      animation: 'zoom', // 'pulse', 'ring', 'zoom',
+      appearance: {
+        blurredBackground: false
+      },
+      pageData: {
+        fname: 'foo'
+      }
+    })
+  });
+  
+  
+</script>
+</body>
+</html>
